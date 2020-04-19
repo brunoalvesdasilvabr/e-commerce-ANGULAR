@@ -1,10 +1,10 @@
 
-    <div  class="col-sm-3 col-md-3">
+    <div [routerLink]="productIndex"  class="col-sm-3 col-md-3">
       <div class="thumbnail">
-        <img  class="img-responsive" src="{{ item.imagePath }}" alt="{{ item.name }}">
+        <img  class="img-responsive" src="{{ productItem.imagePath }}" alt="{{ productItem.name }}">
         <div class="caption">
-          <h3>{{ item.name }}</h3>
-          <p>{{ item.gender }}</p>
+          <h3>{{ productItem.name }}</h3>
+          <p>{{ productItem.gender }}</p>
           <button class="btn btn-primary">Adicionar ao carrinho</button>
         </div>
       </div>

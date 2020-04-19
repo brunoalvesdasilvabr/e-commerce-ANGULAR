@@ -12,7 +12,7 @@ productsList = []
 
   ngOnInit(): void {
     this.productsList = this.productService.products
-    console.log(this.productService.products)
+ 
   }
 
 }

@@ -7,13 +7,13 @@ import { ProductService } from 'src/app/services/product/product.service';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent implements OnInit {
-@Input() productItem:number
+@Input() productItem
+@Input() productIndex
 item
   constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
-   this.item = this.productService.products[this.productItem]
-  //  console.log(this.productItem)
+
   }
 
 }

@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductItemComponent } from './products/product-item/product-item.component';
 import { GlobalHeaderComponent } from './header/global-header/global-header.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { CarrinhoComponent } from './products/carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     ProductItemComponent,
-    GlobalHeaderComponent
+    GlobalHeaderComponent,
+    ProductDetailsComponent,
+    CarrinhoComponent
   ],
   imports: [
     BrowserModule,
