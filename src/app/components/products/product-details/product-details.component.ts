@@ -8,6 +8,7 @@ import { ProductService } from 'src/app/services/product/product.service';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
+tamanhoSelected = false
 productItemDetails
   constructor(private route: ActivatedRoute,private productService:ProductService) { }
 
@@ -15,7 +16,11 @@ productItemDetails
       this.route.params.subscribe((params:Params)=>{
           console.log(+params['id'])
           this.productItemDetails = this.productService.getItem(+params['id'])
+         console.log( this.productItemDetails.tamanhos)
       })
+  }
+  onSelectTamanho(param){
+   console.log(param)
   }
 
 }

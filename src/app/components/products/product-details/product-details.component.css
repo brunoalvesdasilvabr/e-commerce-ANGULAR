@@ -1,0 +1,9 @@
+.tamanhoStyle{
+    transition:all .5s;
+    cursor:pointer
+}
+
+.tamanhoStyle:hover{
+color:white;
+background:lightblue
+}

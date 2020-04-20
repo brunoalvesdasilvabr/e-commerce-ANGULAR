@@ -1,8 +1,8 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProductsComponent } from './products/products.component';
-import { ProductDetailsComponent } from './products/product-details/product-details.component';
-import { CarrinhoComponent } from './products/carrinho/carrinho.component';
+import { ProductsComponent } from './components/products/products.component';
+import { ProductDetailsComponent } from './components/products/product-details/product-details.component';
+import { CarrinhoComponent } from './components/products/carrinho/carrinho.component';
 
 
 
