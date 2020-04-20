@@ -6,7 +6,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductItemComponent } from './components/products/product-item/product-item.component';
 import { GlobalHeaderComponent } from './components/header/global-header/global-header.component';
 import { ProductDetailsComponent } from './components/products/product-details/product-details.component';
-import { CarrinhoComponent } from './components/products/carrinho/carrinho.component';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 
 @NgModule({
   declarations: [

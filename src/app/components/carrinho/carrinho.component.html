@@ -1,0 +1,11 @@
+<h1 *ngIf="carrinhoList.length === 0">Não há items no seu carrinho</h1>
+
+<div class="row" *ngIf="carrinhoList.length > 0">
+    <ul class="col-sm-5 col-md-5">
+        <li class="list-item" *ngFor="let carrinhoItem of carrinhoList">
+            <p>{{ carrinhoItem.name }}</p>
+            <p>{{ carrinhoItem.valor }}</p>
+        </li>
+    </ul>
+
+</div>

@@ -2,7 +2,7 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductDetailsComponent } from './components/products/product-details/product-details.component';
-import { CarrinhoComponent } from './components/products/carrinho/carrinho.component';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 
 
 

@@ -1,4 +1,5 @@
 export class Product{
+    id:number;
     name:string;
     valor:string;
     imagePath:string;
