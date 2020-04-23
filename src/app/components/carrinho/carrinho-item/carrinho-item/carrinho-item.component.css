@@ -1,0 +1,8 @@
+.carrinho__item__container{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.carrinho__item__container h4{
+width:160px
+}

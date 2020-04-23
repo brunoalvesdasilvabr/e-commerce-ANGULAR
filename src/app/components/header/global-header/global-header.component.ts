@@ -11,13 +11,21 @@ export class GlobalHeaderComponent implements OnInit {
 carrinhoList = []
   constructor(private comunicator:ComponentComunicatorService,private carrinhoService:CarrinhoService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.comunicator.getProductInCarrinho().subscribe((item)=>{
-      console.log('dados hrader')
-       console.log(item)
-      this.carrinhoList.push(item)
-      this.carrinhoService.addToCarrinho(item)
-    })
+      console.log('voltou aqui')
+      this.carrinhoList = this.carrinhoService.carrinhoList
+      this.carrinhoService.addToCarrinho(item)     
+  })
+  this.comunicator.deleteItem.subscribe(() => {
+    console.log('global header')
+    this.carrinhoList = this.carrinhoService.carrinhoList
+    console.log(this.carrinhoList)
+
+  })
+
   }
+
+  
 
 }

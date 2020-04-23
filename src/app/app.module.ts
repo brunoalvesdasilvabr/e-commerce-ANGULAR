@@ -7,6 +7,7 @@ import { ProductItemComponent } from './components/products/product-item/product
 import { GlobalHeaderComponent } from './components/header/global-header/global-header.component';
 import { ProductDetailsComponent } from './components/products/product-details/product-details.component';
 import { CarrinhoComponent } from './components/carrinho/carrinho.component';
+import { CarrinhoItemComponent } from './components/carrinho/carrinho-item/carrinho-item/carrinho-item.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CarrinhoComponent } from './components/carrinho/carrinho.component';
     ProductItemComponent,
     GlobalHeaderComponent,
     ProductDetailsComponent,
-    CarrinhoComponent
+    CarrinhoComponent,
+    CarrinhoItemComponent
   ],
   imports: [
     BrowserModule,

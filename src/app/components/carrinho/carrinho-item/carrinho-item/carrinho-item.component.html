@@ -1,0 +1,15 @@
+    <li routerLinkActive="active" class="list-group-item">
+        <div class="row">
+            <div class=" carrinho__item__container col-sm-8 col-md-8">
+                <h4>{{ carrinhoItem.name }}</h4>
+                <h4>{{ carrinhoItem.qntd }}</h4>
+                <h4>{{ carrinhoItem.valor | currency: 'BRL' }}</h4>
+            </div>
+            <div style="text-align:right ;" class="col-sm-4 col-md-4">
+                <button (click)="removeItem()" class=" btn btn-danger">X</button>
+            </div>
+        </div>    
+     
+    </li>
+
+    

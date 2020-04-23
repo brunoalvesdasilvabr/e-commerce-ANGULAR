@@ -11,6 +11,7 @@ export class ProductItemComponent implements OnInit {
 @Input() productItem
 @Input() productIndex
 item
+
   constructor(private productService:ProductService, private comunicator:ComponentComunicatorService) { }
 
   ngOnInit(): void {
@@ -18,7 +19,7 @@ item
   }
 
   addToCart(item){
-this.comunicator.sentToCarrinho(item)
+        this.comunicator.sentToCarrinho(item)
   }
 
 }

@@ -9,7 +9,7 @@ export class ComponentComunicatorService {
 
 sendData = new Subject<Product>()
 sendItems = new Subject()
-
+deleteItem = new Subject()
   constructor() { }
 
 

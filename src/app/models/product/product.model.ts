@@ -1,11 +1,12 @@
 export class Product{
     id:number;
     name:string;
-    valor:string;
+    valor:number;
     imagePath:string;
     category:string;
-    gender:string
-    tamanhos:any
+    gender:string;
+    tamanhos:any;
+    qntd:number
     
 
 }
