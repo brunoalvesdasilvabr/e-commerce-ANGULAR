@@ -24,6 +24,8 @@ export class CarrinhoComponent implements OnInit {
     this.valorTotal = this.calculaTotal(this.carrinhoList)
     this.comunicator.deleteItem.subscribe(() => {
       this.carrinhoList = this.carrinhoService.carrinhoList
+    //   console.log('delete data depois')
+    // console.log(this.carrinhoService.carrinhoList)
       this.valorTotal = this.calculaTotal(this.carrinhoList)
 
     })
@@ -41,4 +43,5 @@ export class CarrinhoComponent implements OnInit {
     return total
   }
 
+  
 }

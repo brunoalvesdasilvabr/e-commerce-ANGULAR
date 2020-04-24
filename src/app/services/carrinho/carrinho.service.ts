@@ -26,9 +26,8 @@ let productExists = false
 
 
 deleteFromCarrinho(id:number){
-    delete this.carrinhoList[id]
+    this.carrinhoList.splice(id,1)
     this.comunicator.deleteItem.next()
-    console.log(this.carrinhoList)
 
 }
 }

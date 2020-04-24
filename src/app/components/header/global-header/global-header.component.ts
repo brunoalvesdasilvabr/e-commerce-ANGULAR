@@ -20,7 +20,7 @@ carrinhoList = []
   this.comunicator.deleteItem.subscribe(() => {
     console.log('global header')
     this.carrinhoList = this.carrinhoService.carrinhoList
-    console.log(this.carrinhoList)
+    console.log(this.carrinhoList.length)
 
   })
 
