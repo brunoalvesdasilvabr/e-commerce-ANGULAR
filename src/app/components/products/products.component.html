@@ -1,1 +1,9 @@
-<app-product-item [productItem]="product" [productIndex]="i" *ngFor="let product of productsList; let i = index"></app-product-item>
+
+<div  class="container loading__container" *ngIf="loading">
+    <app-loading-spinner></app-loading-spinner>
+</div>
+<div class="container" *ngIf="!loading">
+    <app-product-item [productItem]="product" [productIndex]="i" 
+    *ngFor="let product of productsList; let i = index"></app-product-item>
+</div>
+

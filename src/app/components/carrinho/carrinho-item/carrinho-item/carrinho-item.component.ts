@@ -19,7 +19,7 @@ export class CarrinhoItemComponent implements OnInit {
 
   removeItem(){
      this.CarrinhoService.deleteFromCarrinho(this.itemIndex)
-
+    
   }
   
 

@@ -8,11 +8,20 @@ import { ProductService } from 'src/app/services/product/product.service';
 })
 export class ProductsComponent implements OnInit {
 productsList = []
+loading = false
   constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
-    this.productsList = this.productService.products
- 
+    this.fetchProducts()
   }
+
+fetchProducts(){
+  this.loading = true
+  this.productService.getProdutcts().subscribe((response)=>{
+    this.productService.products = response
+    this.productsList = this.productService.products
+    this.loading = false
+  })
+}
 
 }

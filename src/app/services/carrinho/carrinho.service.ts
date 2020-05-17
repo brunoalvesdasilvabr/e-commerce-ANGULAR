@@ -6,6 +6,7 @@ import { ComponentComunicatorService } from '../componentComunicator/component-c
 })
 export class CarrinhoService {
 carrinhoList = []
+// addedToCarrinho = false
   constructor(private comunicator:ComponentComunicatorService) { }
 
 

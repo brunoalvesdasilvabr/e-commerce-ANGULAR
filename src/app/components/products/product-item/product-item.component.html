@@ -7,7 +7,7 @@
           <p>{{ productItem.valor | currency: 'BRL' }}</p>
           <p>{{ productItem.gender }}</p>
       
-          <button type="button" class="btn btn-primary" (click)="addToCart(productItem)">Adicionar ao carrinho</button>
+          <button type="button" class="btn btn-primary col-lg-9 col-sm-9" (click)="addToCart(productItem)">{{ addedToCarrinho?'Adicionado':'Adicionar ao carrinho' }}</button>
           <button type="button" class="btn btn-default" [routerLink]="productIndex"  >Ver Mais</button>
           
         </div>
