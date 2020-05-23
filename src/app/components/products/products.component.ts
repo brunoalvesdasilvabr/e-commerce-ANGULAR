@@ -13,6 +13,7 @@ loading = false
 
   ngOnInit(): void {
     this.fetchProducts()
+
   }
 
 fetchProducts(){
@@ -21,6 +22,8 @@ fetchProducts(){
     this.productService.products = response
     this.productsList = this.productService.products
     this.loading = false
+
+
   })
 }
 

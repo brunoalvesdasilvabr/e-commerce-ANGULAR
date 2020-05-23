@@ -15,7 +15,7 @@
               <p  (click)="onSelectTamanho($event)"  class=" tamanhoStyle col-md-1 col-sm-1" *ngFor="let tamanho of productItemDetails.tamanhos;let i = index">{{ tamanho }}</p>
 
             </div>
-            <button class="btn btn-primary">Adicionar ao carrinho</button>
+            <button class="btn btn-primary" (click)="addToCart(productItemDetails)">Adicionar ao carrinho</button>
           </div>
         </div>
       </div>

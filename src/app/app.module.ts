@@ -11,6 +11,7 @@ import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 import { CarrinhoItemComponent } from './components/carrinho/carrinho-item/carrinho-item/carrinho-item.component';
 import { LoginComponent } from './components/login/login.component';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
+import { FormsModule }   from '@angular/forms';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { LoadingSpinnerComponent } from './components/loading-spinner/loading-sp
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule
     
   ],
   providers: [],

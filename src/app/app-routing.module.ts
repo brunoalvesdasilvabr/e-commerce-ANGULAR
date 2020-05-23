@@ -4,15 +4,16 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductDetailsComponent } from './components/products/product-details/product-details.component';
 import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 import { LoginComponent } from './components/login/login.component';
+import { AuthGuard } from './services/auth-guard.service';
 
 
 
 
 const routes: Routes = [
-  {path:'',redirectTo:'produtos', pathMatch:'full'},
-  {path:'produtos' ,component: ProductsComponent},
-  {path:'produtos/:id', component:ProductDetailsComponent},
-  {path:'carrinho', component:CarrinhoComponent},
+  {path:'',redirectTo:'login', pathMatch:'full'},
+  {path:'produtos' ,component: ProductsComponent, canActivate:[AuthGuard]},
+  {path:'produtos/:id', component:ProductDetailsComponent, canActivate:[AuthGuard]},
+  {path:'carrinho', component:CarrinhoComponent,canActivate:[AuthGuard]},
   {path:'login', component:LoginComponent}
 
 
