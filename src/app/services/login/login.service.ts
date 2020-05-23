@@ -4,12 +4,15 @@ import { map } from 'rxjs/operators';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
+import { CoreEnvironment } from '@angular/compiler/src/compiler_facade_interface';
+import{ environment } from 'src/environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
-apiKey = 'AIzaSyDOCxN9bzXVdMksuwbrXBtpAij0U8esdGI'
+apiKey = environment.api
   constructor(private http:HttpClient, private route:Router) { }
 
 tryLoggedIn = new Subject()
